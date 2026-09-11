@@ -407,12 +407,6 @@ jobs:
     uses: ./.github/workflows/e2e-embed-react.yml
     secrets: inherit
 
-  analyze:
-    name: Analyze Build
-    needs: [build]
-    uses: ./.github/workflows/nextjs-bundle-analysis.yml
-    secrets: inherit
-
   required:
     needs:
       [
